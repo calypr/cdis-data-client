@@ -41,7 +41,6 @@ do
     exe_name+='.exe'
 
   elif [ $GOOS = "darwin" ]; then
-
     if [ $GOARCH = "arm64" ]; then
       output_name=$package_name'-macos'
 
