@@ -577,7 +577,7 @@ func separateSingleMultipartUploads(objects []ManifestObject, uploadPath string,
 	multipartFilePaths := make([]string, 0)
 	for _, object := range objects {
 		// Here we are assuming the local filename will be the same as GUID
-		filePath, err := getFullFilePath(uploadPath, object.ObjectID)
+		filePath, err := getFullFilePath(uploadPath, object.Filename)
 		if err != nil {
 			log.Println(err.Error())
 			continue
